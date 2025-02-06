@@ -1,7 +1,5 @@
 import { createRouter, createWebHashHistory, RouteRecordRaw } from "vue-router";
 
-const HelloWorld = () => import("@/components/HelloWorld.vue");
-
 const routes: Array<RouteRecordRaw> = [
   {
     path: "/",
@@ -9,7 +7,7 @@ const routes: Array<RouteRecordRaw> = [
     meta: {
       title: "首页",
     },
-    component: HelloWorld,
+    component: () => import("@/components/HelloWorld.vue"),
   },
   {
     path: "/hi",

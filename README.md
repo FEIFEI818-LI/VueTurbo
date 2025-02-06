@@ -1,8 +1,4 @@
-# Vue 3 + TypeScript + Vite
-
->  新版发布系统2.0的Vue+TS+Vite的项目demo结构，发布系统的`nodejs`版本为`16.0`
-
-理论上新版发布系统支持任何框架技术与插件，项目以来均采用局部安装方式
+# VueTurbo
 
 ## 技术依赖
 
