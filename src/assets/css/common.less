@@ -1,0 +1,120 @@
+﻿body,
+html {
+  width: 100%;
+  background-size: 100% auto;
+}
+
+#forhorview {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99999;
+  display: none;
+  width: 100%;
+  height: 100%;
+  background: rgb(0 0 0/80%);
+
+  p {
+    position: relative;
+    top: 50%;
+    height: 0.2rem;
+    margin: -0.36rem;
+    font-size: 0.36rem;
+    line-height: 0.2rem;
+    color: #fff;
+    text-align: center;
+  }
+}
+
+.text-shadow (@string: 0 1px 3px rgba(0, 0, 0, 0.25)) {
+  text-shadow: @string;
+}
+
+.box-shadow (@string) {
+  box-shadow: @string;
+}
+
+.drop-shadow (@x: 0, @y: 1px, @blur: 2px, @spread: 0, @alpha: 25%) {
+  box-shadow: @x @y @blur @spread rgb(0 0 0 / @alpha);
+}
+
+.inner-shadow (@x: 0, @y: 1px, @blur: 2px, @spread: 0, @alpha: 25%) {
+  box-shadow: inset @x @y @blur @spread rgb(0 0 0 / @alpha);
+}
+
+.box-sizing (@type: border-box) {
+  box-sizing: @type;
+}
+
+.border-radius (@radius: 5px) {
+  background-clip: padding-box;
+  border-radius: @radius;
+}
+
+.border-radiuses (@topright: 0, @bottomright: 0, @bottomleft: 0, @topleft: 0) {
+  background-clip: padding-box;
+  border-radius: @topleft @topright @bottomright @bottomleft;
+}
+
+.opacity (@opacity: 0.5) {
+  @tempOpacity: @opacity*100;
+
+  filter: alpha(opacity=@opacity);
+  opacity: @opacity;
+}
+
+.gradient (@startColor: #eee, @endColor: white) {
+  background: -webkit-gradient(linear, left top, left bottom, from(@startColor), to(@endColor));
+  background: linear-gradient(to top, @startColor, @endColor);
+  background-color: @startColor;
+}
+
+.horizontal-gradient (@startColor: #eee, @endColor: white) {
+  background-color: @startColor;
+  background-image: -webkit-gradient(linear, left top, right top, from(@startColor), to(@endColor));
+  background-image: linear-gradient(to left, @startColor, @endColor);
+}
+
+.animation (@name, @duration: 300ms, @delay: 0, @ease: ease) {
+  animation: @name @duration @delay @ease;
+}
+
+.transition (@transition) {
+  transition: @transition;
+}
+
+.transform(@string) {
+  transform: @string;
+}
+
+.scale (@factor) {
+  transform: scale(@factor);
+}
+
+.rotate (@deg) {
+  transform: rotate(@deg);
+}
+
+.skew (@deg, @deg2) {
+  transform: skew(@deg, @deg2);
+}
+
+.translate (@x, @y: 0) {
+  transform: translate(@x, @y);
+}
+
+.translate3d (@x, @y: 0, @z: 0) {
+  transform: translate3d(@x, @y, @z);
+}
+
+.perspective (@value: 1000) {
+  perspective: @value;
+}
+
+.transform-origin (@x: center, @y: center) {
+  transform-origin: @x @y;
+}
+
+.animation(@arg) {
+  animation: @arg;
+}
