@@ -17,6 +17,14 @@ const routes: Array<RouteRecordRaw> = [
     },
     component: () => import("@/views/Hi.vue")
   },
+  {
+    path: "/tableView",
+    name: "tableView",
+    meta: {
+      title: "tableView",
+    },
+    component: () => import("@/views/template/tableView.vue")
+  },
 ];
 
 const router = createRouter({

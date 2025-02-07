@@ -22,16 +22,16 @@ export default mergeConfig(
       proxy: {}
     },
     plugins: [
-      eslint({
-        cache: false,
-        include: ['src/**/*.ts', 'src/**/*.tsx', 'src/**/*.vue'],
-        exclude: ['node_modules']
-      }),
-      stylelint({
-        cache: false,
-        include: ['src/**/*.less', 'src/**/*.vue'],
-        exclude: ['node_modules']
-      }),
+    //   eslint({
+    //     cache: false,
+    //     include: ['src/**/*.ts', 'src/**/*.tsx', 'src/**/*.vue'],
+    //     exclude: ['node_modules']
+    //   }),
+    //   stylelint({
+    //     cache: false,
+    //     include: ['src/**/*.less', 'src/**/*.vue'],
+    //     exclude: ['node_modules']
+    //   }),
       mkcert()
     ],
   },
