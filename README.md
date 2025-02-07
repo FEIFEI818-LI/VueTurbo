@@ -34,6 +34,7 @@
     |-vite-end.d.ts     // 定义第三方非typescript模块
 |-.eslintrc.js	// eslint规范检查配置
 |-.stylelintrc.js   // stylelint规范检查配置
+|-params.ts
 |-tsconfig.json		// Typescript的编译配置
 |-tsconfig.node.json	// Typescript的nodejs编译配置
 ```
